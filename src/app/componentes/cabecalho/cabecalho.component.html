@@ -2,13 +2,15 @@
   <nav class="navbar navbar-light bg-white">
     <a class="navbar-brand">
       <i
-        class="fa fa-bars mr-2"
+        class="fa fa-bars mr-2 oth"
         (click)="menu.abreMenu()"
         (keyup.space)="menu.abreMenu()"
       >
       </i>
-      Petbook
     </a>
+  <div class="title">
+  <i class="fa-solid fa-otter tit"> Petbook</i>
+  </div>
 
     <app-menu #menu>
       <ul class="list-unstyled">
@@ -20,7 +22,7 @@
 
     <div *ngIf="user$ | async as user">
       <div *ngIf="user.name; else login">
-        <i class="fa fa-user-circle mr-1"> </i>
+        <i class="fa fa-user-circle mr-1 oth"> </i>
         <a class="mr-1">{{ user.name }}</a>
         <a (click)="logout()">Logout</a>
       </div>

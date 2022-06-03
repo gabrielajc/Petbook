@@ -1,0 +1,22 @@
+.tit{
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #05887d;
+}
+
+.oth{
+  color: black;
+  -webkit-text-stroke-width: 1.1px;
+  -webkit-text-stroke-color: black
+}
+
+.title{
+  height: 60px;
+  font-size: 40px;
+  margin-left: 20%;
+}
+
+.bg-white{
+  background-color: #03B4A4 !important;
+}
+
