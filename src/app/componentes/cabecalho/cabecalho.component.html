@@ -1,37 +1,48 @@
 <header class="sticky-top">
   <nav class="navbar navbar-light bg-white">
-    <a class="navbar-brand">
-      <i
-        class="fa fa-bars mr-2 oth"
-        (click)="menu.abreMenu()"
-        (keyup.space)="menu.abreMenu()"
-      >
-      </i>
-    </a>
-  <div class="title">
-  <i class="fa-solid fa-otter tit"> Petbook</i>
-  </div>
-
-    <app-menu #menu>
-      <ul class="list-unstyled">
-        <li>
-          <a [routerLink]="['animais', 'novo']">Novo Animal</a>
-        </li>
-      </ul>
-    </app-menu>
-
-    <div *ngIf="user$ | async as user">
-      <div *ngIf="user.name; else login">
-        <i class="fa fa-user-circle mr-1 oth"> </i>
-        <a class="mr-1">{{ user.name }}</a>
-        <a (click)="logout()">Logout</a>
+    <div class="minwi">
+      <div class="men">
+        <a class="navbar-brand">
+          <i
+            class="fa fa-bars mr-2 oth"
+            (click)="menu.abreMenu()"
+            (keyup.space)="menu.abreMenu()"
+          >
+          </i>
+        </a>
       </div>
+
+      <div class="logo">
+        <img
+          class="img-fluid"
+          src="https://lh3.googleusercontent.com/pw/AM-JKLViO6_pRGI64maOd7cYRXmKphxcF-_M7HapSUTaTYm0RRQZZlJmNqiK1hxBJgaBh0T4X0zeRs5LyA9dZD1gNdhrCAvgHE-YsvwbPGMgGIrwa0B_IneVpyZxew2FgBYp4VaJtD5OekmPtpcBOXVze23OOg=w400-h70-no?authuser=0"
+          alt=""
+        />
+      </div>
+
+      <app-menu #menu>
+        <ul class="list-unstyled">
+          <li>
+            <a [routerLink]="['animais', 'novo']">Novo Animal</a>
+          </li>
+        </ul>
+      </app-menu>
+
+      <div *ngIf="user$ | async as user">
+        <div class="log" *ngIf="user.name; else login">
+          <div class="res">
+            <i class="fa fa-user-circle mr-1 oth"> </i>
+            <a class="mr-1 name">{{ user.name }}</a>
+            <a class="fra" (click)="logout()">Logout</a>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #login>
+        <span class="navbar-text log fra">
+          <a [routerLink]="['']">Login</a>
+        </span>
+      </ng-template>
     </div>
   </nav>
-
-  <ng-template #login>
-    <span class="navbar-text">
-      <a [routerLink]="['']">Login</a>
-    </span>
-  </ng-template>
 </header>
