@@ -11,6 +11,12 @@
 
 .logo{
   margin: 0 auto;
+  position: relative;
+  left: 65px;
+}
+
+.res{
+  float: right
 }
 
 img{
@@ -20,6 +26,7 @@ img{
 .log a {
   text-decoration:none;
   color: white;
+
 }
 
 .fra{
@@ -33,12 +40,16 @@ img{
   font-size: 18px;
   border-radius: 10%;
   cursor:pointer;
+
+}
+
+.login{
+  margin-left: 105px;
 }
 
 .minwi{
   width: 100%;
-  display: flex !important;
-  justify-content: space-between !important;
+  display: flex;
   align-items: center;
 }
 
@@ -54,6 +65,7 @@ nav{
 
 .men{
   cursor:pointer;
+  float: left;
 }
 
 @media screen and (max-width: 900px) {
