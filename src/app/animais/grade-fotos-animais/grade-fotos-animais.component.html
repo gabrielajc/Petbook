@@ -1,6 +1,9 @@
-<p class="text-center text-muted tx" *ngIf="!animais.length">
- Clique em "Nova Foto" e mostre seu animal ao mundo!
+<div class="msg">
+ <p class="text-center text-muted" *ngIf="!animais.length">
+  Clique em "Nova Foto" e mostre seu animal ao mundo!
 </p>
+ <img class="" src="https://lh3.googleusercontent.com/pw/AM-JKLW9n6BVvbWNJVVA0xybZHuDbVoyQ7eKYWz4Jo7LAu2eM9M_FZezVbOp7uqKv7BAqwC9_IiHu4D7ibxYLu9rdQ_Vs5RRvey9u7U5415gyPwJUq75LJivpQIkrJhY2XkiCAkYmiHIYO7Ra9uMi0Xp0G_WoA=s90-no?authuser=0" alt="">
+</div>
 
 <div class="row">
   <div *ngFor="let animal of animais" class="col-4">
