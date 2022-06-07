@@ -1,21 +1,23 @@
-<p class="text-center text-muted" *ngIf="!animais.length">
-  Desculpe não há animais
+<p class="text-center text-muted tx" *ngIf="!animais.length">
+ Clique em "Nova Foto" e mostre seu animal ao mundo!
 </p>
 
 <div class="row">
   <div *ngFor="let animal of animais" class="col-4">
     <a [routerLink]="['/animais', animal.id]">
       <app-cartao>
-        <app-animal
+        <app-animal class="im"
           [url]="animal.url"
           [descricao]="animal.description"
         ></app-animal>
-        <i aria-hidden="true" class="fa fa-heart-o fa-1x mr-2">{{
+        <div class="bt">
+         <i aria-hidden="true" class="fa fa-heart-o fa-1x mr-2">{{
           animal.likes
         }}</i>
         <i aria-hidden="true" class="fa fa-comment-o fa-1x mr-2 ml-2">
           {{ animal.comments }}
         </i>
+        </div>
       </app-cartao>
     </a>
   </div>
