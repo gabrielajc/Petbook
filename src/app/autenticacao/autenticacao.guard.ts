@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import {
   CanLoad,
   Route,
@@ -15,6 +15,9 @@ import { UsuarioService } from './usuario/usuario.service';
   providedIn: 'root',
 })
 export class AutenticacaoGuard implements CanLoad {
+
+  mostraFooter = new EventEmitter<boolean>()
+
   constructor(private usuarioService: UsuarioService, private router: Router) {}
 
   canLoad(
@@ -26,10 +29,11 @@ export class AutenticacaoGuard implements CanLoad {
     | boolean
     | UrlTree {
     if (!this.usuarioService.estaLogado()) {
+      this.mostraFooter.emit(false)
       this.router.navigate(['']);
       return false;
     }
-
+    this.mostraFooter.emit(true)
     return true;
   }
 }
