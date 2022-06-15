@@ -1,4 +1,15 @@
 
+.li{
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+
+}
+
+li{
+  margin-top: 10px;
+}
+
 .oth{
   color: #05887d;
   -webkit-text-stroke-width: 1.4px;
