@@ -23,7 +23,19 @@
       <app-menu #menu>
         <ul class="list-unstyled">
           <li>
-            <a [routerLink]="['animais', 'novo']">Novo Animal</a>
+            <a [routerLink]="['animais', 'novo']">
+              <i class="fa-solid fa-camera"></i> Nova foto
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['animais']">
+              <i class="fa-solid fa-dog"></i> Pets
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['animais', 'novo']">
+              <i class="fa-solid fa-house"></i> Inicio
+            </a>
           </li>
         </ul>
       </app-menu>
