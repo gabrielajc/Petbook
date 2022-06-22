@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError  } from '@angular/router';
 import { AutenticacaoGuard } from './autenticacao/autenticacao.guard';
 
 @Component({
@@ -9,8 +10,22 @@ import { AutenticacaoGuard } from './autenticacao/autenticacao.guard';
 export class AppComponent {
   title = 'petbook';
   mostrarFooter = false
+  public routeLoading: boolean = false;
 
-  constructor(private autenticacaoGuard: AutenticacaoGuard) {}
+  constructor(private autenticacaoGuard: AutenticacaoGuard, private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        this.routeLoading = true;
+      }
+
+      if (event instanceof NavigationEnd ||
+        event instanceof NavigationCancel ||
+        event instanceof NavigationError)
+      {
+          this.routeLoading = false;
+      }
+    });
+  }
 
   ngOnInit(){
     this.autenticacaoGuard.mostraFooter.subscribe(mostrar => {

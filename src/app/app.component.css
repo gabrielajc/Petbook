@@ -1,0 +1,15 @@
+.overpage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(245, 238, 238, 0.976);
+  z-index: 1;
+}
+
+.spinner-grow{
+position: absolute;
+margin: 50vh 50% 50vh;
+z-index: 2;
+}

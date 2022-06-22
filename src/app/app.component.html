@@ -1,3 +1,15 @@
-<app-cabecalho></app-cabecalho>
-<router-outlet></router-outlet>
-<app-rodape *ngIf="mostrarFooter"></app-rodape>
+
+<div class="content">
+
+  <div *ngIf="routeLoading">
+    <div class="overpage">
+      <div class="spinner-grow" role="status">
+     <span class="sr-only">Loading...</span>
+     </div>
+  </div>
+  </div>
+  <app-cabecalho></app-cabecalho>
+  <router-outlet *ngIf="!routeLoading"></router-outlet>
+  <app-rodape *ngIf="mostrarFooter"></app-rodape>
+
+</div>
