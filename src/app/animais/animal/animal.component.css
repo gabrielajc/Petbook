@@ -1,0 +1,9 @@
+.img-thumbnail{
+  padding: 0.2rem;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
