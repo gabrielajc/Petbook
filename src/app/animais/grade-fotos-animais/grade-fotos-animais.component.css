@@ -1,13 +1,19 @@
-.msg{
+.msg {
   margin-top: 200px;
 }
 
-img{
+img {
   margin: 0 auto;
   display: block;
 }
 
-.bt{
+.bt {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 900px) {
+  i {
+    font-size: 12px;
+  }
 }
