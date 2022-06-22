@@ -1,4 +1,4 @@
-.overpage{
+.overpage {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,8 +8,8 @@
   z-index: 1;
 }
 
-.spinner-grow{
-position: absolute;
-margin: 50vh 50% 50vh;
-z-index: 2;
+.spinner-grow {
+  position: absolute;
+  margin: 50vh 50% 50vh;
+  z-index: 2;
 }
