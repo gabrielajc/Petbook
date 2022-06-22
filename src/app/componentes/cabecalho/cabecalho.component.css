@@ -1,47 +1,42 @@
-
-.li{
+.li {
   color: black;
   font-weight: 700;
   font-size: 18px;
-
 }
 
-li{
+li {
   margin-top: 10px;
 }
 
-.oth{
+.oth {
   color: #05887d;
   -webkit-text-stroke-width: 1.4px;
-  -webkit-text-stroke-color: black
+  -webkit-text-stroke-color: black;
 }
 
-.bg-white{
-  background-color: #03B4A4 !important;
+.bg-white {
+  background-color: #03b4a4 !important;
 }
 
-.logo{
+.logo {
   margin: 0 auto;
-  position: relative;
-  left: 65px;
 }
 
-.res{
-  float: right
+.res {
+  float: right;
 }
 
-img{
+img {
   width: 400px;
 }
 
 .log a {
-  text-decoration:none;
+  text-decoration: none;
   color: white;
-
 }
 
-.fra{
-  background-color:#02a799 ;
+.fra {
+  background-color: #02a799;
   padding: 9px;
   padding-bottom: 5px;
   padding-top: 5px;
@@ -50,21 +45,20 @@ img{
   border-color: rgba(0, 0, 0, 0.267);
   font-size: 18px;
   border-radius: 10%;
-  cursor:pointer;
-
+  cursor: pointer;
 }
 
-.login{
+.login {
   margin-left: 105px;
 }
 
-.minwi{
+.minwi {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-nav{
+nav {
   border-bottom: 1px;
   border-top-width: 0;
   border-right-width: 0;
@@ -74,41 +68,44 @@ nav{
   box-shadow: 0 0 0.2em rgb(0, 0, 0);
 }
 
-.men{
-  cursor:pointer;
+.men {
+  cursor: pointer;
   float: left;
 }
 
+@media screen and (min-width: 900px) {
+  .logo {
+    margin: 0 auto;
+    position: relative;
+    left: 65px;
+  }
+}
+
 @media screen and (max-width: 900px) {
+  .res {
+    width: 110px;
+  }
 
-.res{
-  width: 110px;
-}
+  .res a {
+    font-size: 15px;
+  }
 
-.res a {
-  font-size: 15px;
-}
-
-.fra{
-  position: relative;
-  float:left;
-  top: 10px;
-  margin: 0 10px 10px 0;
-  margin-top: -10px;
-  margin-left: 10%;
-}
-
-
+  .fra {
+    position: relative;
+    float: left;
+    top: 10px;
+    margin: 0 10px 10px 0;
+    margin-top: -10px;
+    margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 587px) {
-
-
-  img{
+  img {
     width: auto;
   }
 
-  .res{
+  .res {
     margin-right: -30px;
     margin-left: 10px;
   }
@@ -116,6 +113,4 @@ nav{
   .res a {
     font-size: 12px;
   }
-
-
 }
