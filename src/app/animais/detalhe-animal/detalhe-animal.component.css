@@ -1,0 +1,25 @@
+
+.text-left{
+  margin-bottom: 20px !important;
+  margin-top:30px;
+}
+
+.icons{
+  margin-bottom: 20px;
+  
+}
+
+@media screen and (min-width: 970px) {
+
+.container-q{
+  display:grid;
+  grid-template-columns:100%;
+  margin: 0 10%;
+
+}
+
+.picture{
+  margin-top: 30px;
+}
+
+}
