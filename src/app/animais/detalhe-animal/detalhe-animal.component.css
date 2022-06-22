@@ -1,27 +1,21 @@
-
-.text-left{
+.text-left {
   margin-bottom: 20px !important;
-  margin-top:20px;
+  margin-top: 20px;
   word-break: break-all;
-
 }
 
-.icons{
+.icons {
   margin-bottom: 20px;
-
 }
 
 @media screen and (min-width: 970px) {
+  .container-q {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0 10%;
+  }
 
-.container-q{
-  display:grid;
-  grid-template-columns:100%;
-  margin: 0 10%;
-
-}
-
-.picture{
-  margin-top: 30px;
-}
-
+  .picture {
+    margin-top: 30px;
+  }
 }
