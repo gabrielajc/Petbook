@@ -35,7 +35,6 @@ export class ComentariosComponent implements OnInit {
         switchMap(() => this.comentariosService.buscaComentario(this.id)),
         tap(() => {
           this.comentarioForm.reset();
-          alert('Salvo Comentário');
         })
       );
   }
