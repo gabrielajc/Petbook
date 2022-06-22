@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { browser } from 'protractor';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -32,4 +33,11 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('petbook app is running!');
   });
+});
+
+describe('If this aplication is loading', function (){
+	it('Aplications loading', async function () {
+ 		browser.waitForAngular
+		await browser.get('http://localhost:4200/');
+	});
 });
