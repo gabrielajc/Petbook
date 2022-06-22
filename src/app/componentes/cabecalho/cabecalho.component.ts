@@ -16,8 +16,5 @@ export class CabecalhoComponent {
     location.reload();
     this.usuarioService.logout();
     this.router.navigate(['']);
-
   }
-
-
 }
