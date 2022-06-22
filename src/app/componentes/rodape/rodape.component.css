@@ -1,8 +1,3 @@
-
-.rodape{
-  width: 100%;
-}
-
 .rodape i{
   display: inline-block;
   vertical-align: top;
@@ -11,4 +6,18 @@
   color: #03B4A4;
   -webkit-text-stroke-width: 1.1px;
   -webkit-text-stroke-color: #000;
+}
+
+@media screen and (max-width: 1127px){
+.rodape{
+  text-align: center;
+}
+
+.rodape i{
+  display:inline-block;
+  vertical-align: top;
+  margin-right: 5%;
+  margin-left: 5%;
+
+}
 }
