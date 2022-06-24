@@ -1,0 +1,9 @@
+.title{
+margin-top: 25px;
+margin-bottom: -10px;
+color: black;
+}
+
+.input{
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.261);
+}

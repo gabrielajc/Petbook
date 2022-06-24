@@ -1,8 +1,8 @@
-<h4 class="text-center">Registre-se e mostre seu pet ao mundo!</h4>
+<h4 class="text-center title">Registre-se</h4>
 
 <form class="form mt-4" [formGroup]="novoUsuarioForm" (submit)="cadastrar()">
   <div class="form-group">
-    <input placeholder="e-mail" class="form-control" formControlName="email" />
+    <input placeholder="e-mail" class="form-control input" formControlName="email" />
     <app-mensagem
       *ngIf="
         novoUsuarioForm.get('email')?.errors?.required &&
@@ -23,7 +23,7 @@
   <div class="form-group">
     <input
       placeholder="Nome Completo"
-      class="form-control"
+      class="form-control input"
       formControlName="fullName"
     />
     <app-mensagem
@@ -38,7 +38,7 @@
   <div class="form-group">
     <input
       placeholder="Usuário"
-      class="form-control"
+      class="form-control input"
       formControlName="userName"
     />
     <app-mensagem
@@ -58,7 +58,7 @@
     <input
       type="password"
       placeholder="Senha"
-      class="form-control"
+      class="form-control input"
       formControlName="password"
     />
     <app-mensagem
@@ -68,7 +68,7 @@
     </app-mensagem>
   </div>
 
-  <button class="btn btn-primary btn-block">Cadastro</button>
+  <button class="btn btn-infonp btn-block">Cadastro</button>
 </form>
 
 <p>Já um usuário? <a [routerLink]="['']"> Faça Login</a></p>
