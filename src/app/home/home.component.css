@@ -1,0 +1,45 @@
+img {
+  border-radius: 5%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 0 0 1em black;
+}
+
+.container {
+  margin-top: 4%;
+}
+
+.h2 {
+  color: rgba(0, 0, 0, 0.796);
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-top: 10px;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.4em;
+    margin-bottom: -20px;
+  }
+}

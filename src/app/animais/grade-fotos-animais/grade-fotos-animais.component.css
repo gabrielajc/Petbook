@@ -1,10 +1,9 @@
-.msg {
-  margin-top: 200px;
+body {
+  overflow-x: hidden;
 }
 
-img {
-  margin: 0 auto;
-  display: block;
+.msg {
+  margin-top: 300px;
 }
 
 .bt {
@@ -12,8 +11,27 @@ img {
   color: black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   i {
-    font-size: 12px;
+    font-size: 15px;
+  }
+
+  .col-4 {
+    min-width: 500px !important;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 774px) {
+  .col-4 {
+    min-width: 400px !important;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 774px) and (min-width: 600px) {
+  .col-4 {
+    min-width: 310px !important;
+    margin: 0 auto;
   }
 }

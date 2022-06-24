@@ -9,13 +9,13 @@ li {
 }
 
 .oth {
-  color: #05887d;
+  color: #282b50;
   -webkit-text-stroke-width: 1.4px;
   -webkit-text-stroke-color: black;
 }
 
 .bg-white {
-  background-color: #03b4a4 !important;
+  background-color: #434781 !important;
 }
 
 .logo {
@@ -36,7 +36,7 @@ img {
 }
 
 .fra {
-  background-color: #02a799;
+  background-color: #2f3363;
   padding: 9px;
   padding-bottom: 5px;
   padding-top: 5px;
@@ -64,7 +64,7 @@ nav {
   border-right-width: 0;
   border-left-width: 0;
   border-style: solid;
-  border-color: #00776dc4;
+  border-color: #434781;
   box-shadow: 0 0 0.2em rgb(0, 0, 0);
 }
 

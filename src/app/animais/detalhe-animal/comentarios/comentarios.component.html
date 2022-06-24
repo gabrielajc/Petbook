@@ -10,11 +10,11 @@
   <div class="mt-4">
     <form [formGroup]="comentarioForm" (submit)="gravar()">
       <div class="input-group">
-        <textarea class="form-control" formControlName="comentario"></textarea>
+        <textarea class="form-control textarea" formControlName="comentario" placeholder="Insira aqui seu comentário sobre esta imagem"></textarea>
         <div class="input-group-append">
           <button
             [disabled]="comentarioForm.invalid"
-            class="btn btn-primary pull-left"
+            class="btn btn-info pull-left"
           >
             Publicar
           </button>

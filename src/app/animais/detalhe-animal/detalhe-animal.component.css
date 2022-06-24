@@ -1,3 +1,7 @@
+*{
+  background-color: transparent !important;
+}
+
 .text-left {
   margin-bottom: 20px !important;
   margin-top: 20px;
@@ -6,6 +10,7 @@
 
 .icons {
   margin-bottom: 20px;
+  color: black;
 }
 
 @media screen and (min-width: 970px) {
@@ -18,4 +23,5 @@
   .picture {
     margin-top: 30px;
   }
+
 }
