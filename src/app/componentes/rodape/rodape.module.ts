@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RodapeComponent } from './rodape.component';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
+import { RodapeComponent } from './rodape.component';
 
 @NgModule({
   declarations: [RodapeComponent],
