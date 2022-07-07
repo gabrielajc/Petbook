@@ -1,5 +1,5 @@
 <h1 align="center"> Petbook</h1> 
-<p align="center"> <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/badge/npm-8.3.1-orange"/> <img src="https://img.shields.io/github/license/gabrielajc/angularApp"/> <img src="https://img.shields.io/badge/Bootstrap-7.1.2-brightgreen"/> <img src="https://badges.aleen42.com/src/angular.svg"/> <img src="https://badges.aleen42.com/src/typescript.svg"/> </p>
+<p align="center"> <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/badge/npm-8.3.1-orange"/> <img src="https://img.shields.io/badge/Bootstrap-7.1.2-brightgreen"/> <img src="https://badges.aleen42.com/src/angular.svg"/> <img src="https://badges.aleen42.com/src/typescript.svg"/>  <img src="https://img.shields.io/github/license/gabrielajc/angularApp"/> </p>
 
 <h6> Status: Concluido :heavy_check_mark: </h6>
 
